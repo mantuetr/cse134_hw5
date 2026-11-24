@@ -2,10 +2,10 @@
 /* HW5 - Component theme properties */
 
 #fun-facts {
-    --fact-background: var(--cream, #fff9ee);
-    --fact-text: var(--ink, #6666c8);
+    --fact-background: var(--surface-bg, #fff9ee);
+    --fact-text: var(--text-color, #6666c8);
+    --fact-border: var(--border-color, #7466a5);
     --fact-accent: var(--heading-color, #f46ba8);
-    --fact-border: var(--border, #7466a5);
     --fact-button-bg: var(--pink, #facbe1);
     --fact-focus: var(--focus-color, #f46ba8);
     --fact-spacing: 1rem;
@@ -113,28 +113,6 @@ fun-fact-card [role="status"] {
 }
 
 /* JavaScript-disabled fallback */
-
-#toggle-details[hidden] {
-    display: none;
-}
-
-fun-fact-card:empty {
-    display: none;
-}
-
-.fact-fallback {
-    max-width: 450px;
-    margin: 1.5rem auto;
-    padding: 1.5rem;
-
-    background-color: var(--fact-background, #fff9ee);
-    color: var(--fact-text, #6666c8);
-
-    border: 2px solid var(--fact-border, #7466a5);
-    border-radius: 20px;
-
-    text-align: center;
-}
 
 #toggle-details[hidden] {
     display: none;
