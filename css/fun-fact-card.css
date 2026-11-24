@@ -1,6 +1,3 @@
-
-/* HW5 - Component theme properties */
-
 #fun-facts {
     --fact-background: var(--surface-bg, #fff9ee);
     --fact-text: var(--text-color, #6666c8);
@@ -127,9 +124,9 @@ fun-fact-card:empty {
     margin: 1.5rem auto;
     padding: 1.5rem;
 
-    background-color: var(--cream, #fff9ee);
-    color: var(--ink, #6666c8);
-    border: 2px solid var(--border, #7466a5);
+    background-color: var(--fact-background, #fff9ee);
+    color: var(--fact-text, #6666c8);
+    border: 2px solid var(--fact-border, #7466a5);
     border-radius: 20px;
 
     text-align: center;
