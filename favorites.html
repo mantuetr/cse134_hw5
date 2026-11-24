@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Lisa's favorite things">
+    <title>A Little World of Mine | I Love</title>
+    <link rel="author" href="about.html">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/favorites.css">
+</head>
+<body>
+
+    <header class="site-header">
+        
+        <h1>A Little World of Mine</h1>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="favorites.html" aria-current="page">I Love...</a>
+                <a href="journey.html">My Journey</a>
+                <a href="future.html">In the Future</a>
+                <a href="form-with-js.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <script src="js/theme.js" defer></script>
+        <button type="button" id="theme-toggle" class="theme-toggle" hidden>
+            Switch to Dark Mode
+        </button>
+    </header>
+
+    <main class="favorites-page">
+        <section class="favorites-intro">
+            <h2>❤︎ Things I Love ❤︎</h2>
+        </section>
+
+        <div class="favorites-card-grid">
+            <section id="japanese-culture-section">
+                <h2>Japanese Culture</h2>
+    
+                <article>
+                    <h3>Why Japan?</h3>
+                    <picture>
+                        <source media="(max-width: 600px)"
+                                srcset="/img/jpn_matsuri.jpg"
+                                type="image/jpeg">
+                    
+                        <img src="/img/jpn_food.jpeg"
+                             alt="Japanese culture, food, and festivals"
+                             width="300">
+                    </picture>
+    
+                    <p>
+                        I love Japanese culture, their food, and their traditions. I visited Japan when I was young, and hope to go back someday
+                    </p>
+    
+                    <p>
+                        <i lang="ja">日本の料理はとても美味しいです。好きな食べ物はすしとさしみです。和食も好きです。
+                            ありがとうございます。
+                        </i>
+                    </p>
+                </article>
+            </section>
+    
+            <section id="gumayusi-section">
+                <h2>League of Legends</h2>
+    
+                <article>
+                    <h3>GUMAYUSI</h3>
+    
+                    <img src="/img/gumayusi_msi.jpeg" alt="Gumayusi, LoL player" width="300">
+    
+                    <p>I've known LoL about a long time because my friends play it a lot. I did not have interest in it at first. But, Gumayusi is the one who got me into LoL. He was in T1, and now is in HLE team.</p>
+    
+                    <p>I admire him a lot because of his confidence, determination, and skills</p>
+    
+                    <details class="video-details">
+                        <summary>Worlds Final Game 5 2025</summary>
+                        <iframe 
+                            width="400"
+                            height="225"
+                            src="https://www.youtube-nocookie.com/embed/AXp6hL8MuDE?si=YCNzdtP7drvmGJjJ"
+                            title="World 2025 Final Game"
+                            allowfullscreen>
+                        </iframe>
+                        <p>Enjoy!!!</p>
+                    </details>
+                </article>
+            </section>
+    
+            <section id="movies-section">
+                <h2>Movies</h2>
+    
+                <h3>My Favorite Genre: Horror</h3>
+    
+                <article>
+    
+                    <p>So, my first and favorite movie</p>
+    
+                    <img src="/img/the_ring.jpg" alt="The Ring, a scary Japanese movie released in 2002" width="300">
+    
+                    <p>This is the first scary movie that I watched. I was terrified when I was watching because I was 12 years old. But, it was a great movie. I recommend it.</p>
+    
+                    <h3>My Second Favorite Genre: Cartoon(Anime)</h3>
+    
+                    <p>And, my favorite anime movie</p>
+    
+                    <details class="video-details">
+                        <summary>Doraemon Trailer</summary>
+                        <iframe 
+                        width="400"
+                        height="225"
+                        src="https://www.youtube-nocookie.com/embed/-yUmgVLuAeU?si=qsLRsjKbLj2Zo9_i" 
+                        title="Doraemon Movie 27 Trailer"
+                        allowfullscreen>
+                    </iframe>
+    
+                    <p>This is <strong>Doraemon</strong>, my childhood. They are releasing their 27th movie in April, 2027. Really recommend it.</p>
+                    </details>
+                </article>
+            </section>
+    
+            <section id="travel-section">
+                <h2>Travel</h2>
+                <article>
+                    <h3>Exploring the World</h3>
+    
+                    <p>I love traveling around the world because I learn more about different cultures, and create such beautiful memories</p>
+    
+                    <h3>Antarctica</h3>
+    
+                    <img src="/img/antarctica.jpeg" alt="Cruise trip to Antarctica" width="300">
+    
+                    <p>I wanna go to <strong>Antarctica</strong> one day because it's mysterious and not many people go there</p>
+    
+                    <details class="video-details">
+                        <summary>
+                            Cruise to Antarctica
+                        </summary>
+    
+                        <iframe 
+                            width="400"
+                            height="225"
+                            src="https://www.youtube-nocookie.com/embed/-yYFtHIZkO4?si=DnO98CbSOuM_ctCA" 
+                            title="Antarctica Cruise"
+                            allowfullscreen>
+                        </iframe>
+    
+                        <p>I wanna take a cruise to Antarctica someday</p>
+                    </details>
+                </article>
+            </section>
+        </div>
+
+        
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            A Little World of Mine | By Lisa with HTML
+        </p>
+    </footer>
+</body>
+</html>

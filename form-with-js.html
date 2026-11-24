@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little World of Mine | Contact Me with JS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form-no-js.css">
+    <link rel="stylesheet" href="css/form-with-js.css">
+    <script src="js/form.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>A Little World of Mine</h1>
+    
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="favorites.html">I Love...</a>
+                <a href="journey.html">My Journey</a>
+                <a href="future.html">In the Future</a>
+                <a href="form-with-js.html" aria-current="page">
+                    Contact Me
+                </a>
+            </div>
+        </nav>
+        
+        <script src="js/theme.js" defer></script>
+        <button type="button" id="theme-toggle" class="theme-toggle" hidden>
+            Switch to Dark Mode
+        </button>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-card">
+            <h2>Let's Get in Touch!</h2>
+    
+            <p>
+                Have a question, suggestion, or just want
+                to say hello? Feel free to leave me a message!
+            </p>
+
+            <p id="form-instructions">
+                Fields marked with <span class="required-star" aria-hidden="true">*</span> are required.
+                Name must be 1–100 characters.
+                Message must be 10–1000 characters.
+            </p>
+
+            
+            <form action="https://httpbin.org/post" method="post">
+
+                
+                <div class="form-group">
+                    <label for="name">
+                        Your Name: <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        minlength="1"
+                        maxlength="100"
+                        aria-describedby="form-instructions name-error"
+                        required
+                    >
+
+                    <p id="name-error" class="field-error" hidden></p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">
+                        Your Email: <span class="required-star" aria-hidden="true">*</span>
+                    </label>   
+
+                    <input type="email" id="email" name="email"
+                    autocomplete="email" aria-describedby="form-instructions email-error"
+                    required>
+
+                    <p id="email-error" class="field-error" hidden></p>
+                </div>
+        
+               
+                <div class="form-group">
+                    <label for="comments">
+                        Your Message: <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <textarea
+                        id="comments"
+                        name="comments"
+                        rows="6"
+                        minlength="10"
+                        maxlength="1000"
+                        aria-describedby="form-instructions comments-error character-count"
+                        required
+                    ></textarea>
+
+                    <p id="comments-error" class="field-error" hidden></p>
+                </div>
+
+                
+
+                <div id="error-area" role="status" aria-live="polite" hidden>
+                    <h3>Please correct the following:</h3>
+                    <ul id="error-list"></ul>
+                </div>
+
+                <div id="info-area" role="status" aria-live="polite" hidden>
+                    <h3>Message Information</h3>
+                    <p id="character-count"></p>
+                </div>
+
+                <input type="hidden" name="form-errors" id="form-errors" value="[]">
+
+                <input type="hidden" name="possible_bot" value="true">
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p class="form-version-link">
+                <a href="form-no-js.html">
+                    View Contact Form Without JavaScript
+                </a>
+            </p>
+    
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>
+            A Little World of Mine | By Lisa with HTML
+        </p>
+    </footer>
+</body>
+</html>

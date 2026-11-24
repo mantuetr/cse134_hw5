@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little World of Mine | Experiments</title>
+</head>
+<body>
+    <header>
+        <h1>My HTML Experiments</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Template Experiment</h2>
+        
+            <p>
+                This template stores a travel card that could be reused in the future.
+            </p>
+        
+            <template id="travel-card">
+                <article>
+                    <h3>My Dream Destination: Antarctica</h3>
+                    <p>
+                        One day, I want to visit Antarctica and see penguins in their natural habitat.
+                    </p>
+                    <img src="img/antarctica.jpg"
+                         alt="Beautiful landscape in Antarctica"
+                         width="300">
+                </article>
+            </template>
+        </section>
+
+        <section>
+            <h2 lang="vi">Mắt Môi Tay Chân - MCK (ft. Tage)</h2>
+
+            <audio controls>
+                <source src="/media/music.mp3"
+                        type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section>
+            <h2 lang="ko">G-DRAGON - '무제(無題) (Untitled, 2014)' M/V</h2>
+
+            <video controls width="400">
+                <source src="/media/video.mp4"
+                        type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <section>
+            <h2>Pink Heart</h2>
+        
+            <canvas id="heart-canvas" width="300" height="200">
+                Your browser does not support canvas.
+            </canvas>
+        
+            <script>
+                const canvas = document.getElementById("heart-canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "pink";
+                ctx.beginPath();
+                ctx.moveTo(150, 160);
+                ctx.bezierCurveTo(40, 90, 100, 20, 150, 70);
+                ctx.bezierCurveTo(200, 20, 260, 90, 150, 160);
+                ctx.fill();
+            </script>
+        </section>
+
+        <section>
+            <h2>Extra Credit</h2>
+        
+            <p>Einstein's mass-energy equivalence formula:</p>
+        
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <msup>
+                    <mi>c</mi>
+                    <mn>2</mn>
+                </msup>
+            </math>
+        </section>
+
+    </main>
+</body>
+</html>

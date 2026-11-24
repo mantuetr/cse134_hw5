@@ -1,0 +1,133 @@
+.favorites-page {
+    width: min(1100px, calc(100% - 3rem));
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.favorites-intro {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+
+    text-align: center;
+    background: var(--cream);
+
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 var(--pink);
+}
+
+.favorites-intro h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--ink);
+}
+
+.favorites-card-grid {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 2rem;
+}
+
+.favorites-card-grid h2, h3{
+    color: var(--ink);
+}
+
+.favorites-card-grid > section {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 1.5rem;
+
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 var(--pink);
+}
+
+#japanese-culture-section{
+    background: var(--green);
+}
+
+#gumayusi-section{
+    background: var(--orange);
+}
+
+#movies-section{
+    background: var(--sky);
+}
+
+#travel-section{
+    background: var(--lavender);
+}
+
+.favorites-card-grid img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    margin: 0 auto;
+
+    border: 5px solid var(--pink);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.video-details {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.video-details summary {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--ink);
+    background: var(--cream);
+
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 var(--pink);
+}
+
+.video-details summary:hover {
+    background: var(--red);
+}
+
+.video-details summary:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 4px;
+}
+
+.video-details iframe {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-top: 1rem;
+
+    border: 2px solid var(--border);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .favorites-page {
+        width: calc(100% - 2rem);
+    }
+
+    .favorites-card-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

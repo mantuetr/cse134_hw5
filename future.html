@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Lisa's future dreams and goals">
+    <title>A Little World of Mine | My Future </title>
+    <link rel="author" href="about.html">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/future.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>A Little World of Mine</h1>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="favorites.html">I Love...</a>
+                <a href="journey.html">My Journey</a>
+                <a href="future.html" aria-current="page">In the Future</a>
+                <a href="form-with-js.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <script src="js/theme.js" defer></script>
+        <button type="button" id="theme-toggle" class="theme-toggle" hidden>
+            Switch to Dark Mode
+        </button>
+    </header>
+    
+    <main class="future-page">
+        <section class="future-intro">
+            <h2>In The Future</h2>
+
+            <p>There is still a long journey ahead. I don't know what to expect, but I have many dreams and goals to achieve</p>
+        </section>
+
+        <div class="future-card-grid">
+            <section class="future-card career">
+                <h2>Career Dreams</h2>
+    
+                <article>
+                    <h3>Working in Tech</h3>
+    
+                    <p>
+                        As a Computer Science student, I hope to build a career in technology.
+                    </p>
+    
+                    <p>
+                        I'm especially interested in creating user-friendly applications and working with people from different backgrounds.
+                    </p>
+    
+                    <p>
+                        One day, I hope to lead projects, collaborate with international teams, and create products that make people's lives easier.
+                    </p>
+                </article>
+            </section>
+    
+            <section class="future-card personal">
+                <h2>Personal Goals</h2>
+    
+                <article>
+                    <h3>The Life I Want</h3>
+    
+                    <p>
+                        My goal is to have a stable career while enjoying my life
+                    </p>
+    
+                    <p>
+                        I want to support my family, continue learning, and have the freedom to travel
+                    </p>
+    
+                    <p>
+                        Most importantly, I want to <i>live a life that makes me happy without regretting my decisions</i>
+                    </p>
+                </article>
+            </section>
+    
+            <section class="future-card travel">
+                <h2>Places I Want to Visit</h2>
+    
+                <article>
+                    <h3>Exploring the World</h3>
+    
+                    <p>
+                        Traveling has always been one of my biggest passions. I want to explore new places and experience different cultures.
+                    </p>
+    
+                    <ul>
+                        <li>Japan during different seasons</li>
+                        <li>Northern Europe</li>
+                        <li>Antarctica</li>
+                        <li>Around the world...</li>
+                    </ul>
+    
+                    <img 
+                        src="/img/around_the_world.jpeg" alt="Around the World"
+                        width="300">
+                </article>
+            </section>
+    
+            <section class="dream-form">
+                <h2>Share Your Dreams</h2>
+    
+                <p>What are your dreams?</p>
+    
+                <form action="future.html" method="get">
+                    <fieldset>
+                        <legend>Tell Me About Your Future</legend>
+    
+                        <p>
+                            <label for="visitor-name">
+                                Your Name:
+                            </label>
+    
+                            <input type="text" id="visitor-name" name="visitor-name" required>
+                        </p>
+    
+                        <p>
+                            <label for="visitor-goal">
+                                Your Biggest Goal:
+                            </label>
+    
+                            <input type="text" id="visitor-goal" name="visitor-goal" required>
+                        </p>
+    
+                        <p>
+                            <label for="visitor-dream">
+                                Tell Me More About Your Dream:
+                            </label>
+                        </p>
+    
+                        <p>
+                            <textarea
+                                id="visitor-dream"
+                                name="visitor-dream"
+                                rows="5"
+                                cols="40"
+                                placeholder="Write about your dream here..."></textarea>
+                        </p>
+    
+                        <button type="submit">Submit Your Dream</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+        <section class="future-note">
+            <h2>A Note to My Future Self</h2>
+        
+            <personal-note>
+                <p>
+                    Dear future me, I hope you are living a life that makes you happy. Keep exploring, keep learning, and never forget where you came from.
+                </p>
+            </personal-note>
+        </section> 
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            A Little World of Mine | By Lisa with HTML
+        </p>
+    </footer>
+</body>
+</html>
