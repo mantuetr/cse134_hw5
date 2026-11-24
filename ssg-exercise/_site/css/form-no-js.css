@@ -1,0 +1,136 @@
+
+.contact-page {
+    width: min(800px, calc(100% - 2rem));
+    margin: 3rem auto;
+}
+
+.contact-card {
+    box-sizing: border-box;
+    padding: 2.5rem;
+    background: var(--cream);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 var(--pink);
+}
+
+.contact-card h2 {
+    text-align: center;
+    color: var(--ink);
+    font-size: 2.5rem;
+}
+
+.contact-card > p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #39305c;
+}
+
+.form-group input,
+.form-group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.8rem;
+    font: inherit;
+    color: #29243b;
+    background: white;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 3px solid #49317e;
+    outline-offset: 3px;
+}
+
+.contact-card button {
+    padding: 0.9rem 1.5rem;
+    font: inherit;
+    font-weight: bold;
+    color: var(--ink);
+    background: var(--orange);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 var(--border);
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    background: var(--pink);
+    transform: translateY(-2px);
+}
+
+.contact-card button:focus-visible {
+    outline: 3px solid #49317e;
+    outline-offset: 4px;
+}
+
+.form-group input:required,
+.form-group textarea:required {
+    border-width: 2px;
+}
+
+.required-star {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-group input:user-invalid,
+.form-group textarea:user-invalid {
+    border-color: #b42336;
+    background-color: #fff1f2;
+    outline-color: #b42336;
+}
+
+.form-group input:user-valid,
+.form-group textarea:user-valid {
+    border-color: #26734d;
+    background-color: #f0fff5;
+}
+
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 3px solid #49317e;
+    outline-offset: 3px;
+}
+
+#form-instructions {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #493d66;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+    .contact-card {
+        padding: 1.25rem;
+    }
+
+    .contact-card h2 {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,158 @@
+
+/* HW5 - Component theme properties */
+
+#fun-facts {
+    --fact-background: var(--cream, #fff9ee);
+    --fact-text: var(--ink, #6666c8);
+    --fact-accent: var(--heading-color, #f46ba8);
+    --fact-border: var(--border, #7466a5);
+    --fact-button-bg: var(--pink, #facbe1);
+    --fact-focus: var(--focus-color, #f46ba8);
+    --fact-spacing: 1rem;
+}
+
+/* Section heading */
+
+#fun-facts > h2 {
+    text-align: center;
+    margin: 2rem auto 1rem;
+}
+
+/* Component card */
+
+fun-fact-card {
+    display: block;
+    max-width: 450px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+
+    background-color: var(--fact-background, #fff9ee);
+    color: var(--fact-text, #6666c8);
+
+    border: 2px solid var(--fact-border, #7466a5);
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+fun-fact-card h2 {
+    color: var(--fact-accent, #f46ba8);
+    margin-bottom: var(--fact-spacing, 1rem);
+}
+
+fun-fact-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+fun-fact-card p {
+    line-height: 1.6;
+}
+
+/* Compact mode */
+
+fun-fact-card .fact-detail {
+    margin-top: var(--fact-spacing, 1rem);
+}
+
+fun-fact-card .fact-detail[hidden] {
+    display: none;
+}
+
+/* Shared button styles */
+
+fun-fact-card button,
+#toggle-details {
+    padding: 0.7rem 1.2rem;
+
+    border: 2px solid var(--fact-border, #7466a5);
+    border-radius: 12px;
+
+    background-color: var(--fact-button-bg, #facbe1);
+    color: var(--fact-text, #6666c8);
+
+    font: inherit;
+    cursor: pointer;
+}
+
+fun-fact-card button:hover:not(:disabled),
+#toggle-details:hover {
+    background-color: var(--lavender, #dbd1fd);
+}
+
+/* Keyboard accessibility */
+
+fun-fact-card button:focus-visible,
+#toggle-details:focus-visible {
+    outline: 3px solid var(--fact-focus, #f46ba8);
+    outline-offset: 3px;
+}
+
+/* External button */
+
+#toggle-details {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Internal buttons */
+
+fun-fact-card button {
+    margin: 0.5rem;
+}
+
+fun-fact-card button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* API status */
+
+fun-fact-card [role="status"] {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+/* JavaScript-disabled fallback */
+
+#toggle-details[hidden] {
+    display: none;
+}
+
+fun-fact-card:empty {
+    display: none;
+}
+
+.fact-fallback {
+    max-width: 450px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+
+    background-color: var(--fact-background, #fff9ee);
+    color: var(--fact-text, #6666c8);
+
+    border: 2px solid var(--fact-border, #7466a5);
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+#toggle-details[hidden] {
+    display: none;
+}
+
+fun-fact-card:empty {
+    display: none;
+}
+
+.fact-fallback {
+    max-width: 450px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+
+    background-color: var(--cream, #fff9ee);
+    color: var(--ink, #6666c8);
+    border: 2px solid var(--border, #7466a5);
+    border-radius: 20px;
+
+    text-align: center;
+}

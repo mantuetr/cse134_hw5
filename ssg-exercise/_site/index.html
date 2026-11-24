@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little World of Mine | Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="author" href="/css/about.css">
+    <link rel="stylesheet" href="/css/fun-fact-card.css">
+
+
+</head>
+<body>
+
+    <header class="site-header">
+
+        <h1>A Little World of Mine</h1>
+        
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about/">About Me</a>
+                <a href="favorites.html">I Love...</a> 
+                <a href="journey.html">My Journey</a> 
+                <a href="future.html">In the Future</a>
+                <a href="form-with-js.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <script src="js/theme.js" defer></script>
+        <button type="button" id="theme-toggle" class="theme-toggle" hidden>
+            Switch to Dark Mode
+        </button>
+
+    </header>
+
+    <main>
+        <section class="introduction">
+            <div class="intro-text">
+                <p class="intro-label">PROFILE / 174</p>
+                <h2>
+                    Hi! I'm Lisa
+                </h2>
+
+                <p>I'm a student at UCSD who loves exploring different cultures, watching movies, playing games, and traveling</p>
+
+                <p>This website is my personal space to share things that make me happy, the experiences that shape me, and the future I'm looking forward</p>
+
+                <a href="about.html" class="intro-button">→ About Me ←</a>
+
+            </div>
+
+            <div class="intro-image">
+                <a href="about.html">
+                    <img src="/img/profile.jpg" alt="A personal picture" width="350">
+                </a>
+                <p>♡ LISA TRAN ♡</p>
+            </div>
+        
+
+            
+        </section>
+
+        <section class="passions">
+            <h2>✦ Things that I'm passionate about ✦</h2>
+
+            <div class="passion-grid">
+                <article class="passion-card">
+                    <a href="favorites.html#japanese-culture-section">
+        
+                        <img src="/img/jpn.jpeg" alt="Beautiful Japanese" width="250">
+
+                        <h3>
+                            Japanese Culture
+                        </h3>
+        
+                        <span>Explore</span>
+                    </a>  
+                </article>
+    
+                <article class="passion-card">
+                    <a href="favorites.html#movies-section">
+        
+                        <img src="/img/minions.jpg" alt="Great movie" width="250">
+
+                        <h3>
+                            Movies
+                        </h3>
+        
+                        <span>Explore</span>
+                    </a>
+                </article>
+    
+                <article class="passion-card">
+                    <a href="favorites.html#gumayusi-section">
+        
+                        <img src="/img/gumayusi.jpeg" alt="Gumayusi, ADC GOAT" width="250">
+
+                        <h3>
+                            Gumayusi
+                        </h3>
+        
+                        <span>Explore</span>
+                    </a>
+                </article>
+    
+                <article class="passion-card">
+                    <a href="favorites.html#travel-section">
+        
+                        <img src="/img/travel.jpeg" alt="Dream travel" width="250">
+
+                        <h3>
+                            Travel
+                        </h3>
+        
+                        <span>Explore</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+        <script src="js/fun-fact-card.js" defer></script>
+        <section id="fun-facts" aria-labelledby="fun-facts-heading">
+
+            <h2 id="fun-facts-heading">
+                A Little Something Fun
+            </h2>
+        
+            <fun-fact-card></fun-fact-card>
+        
+            <button type="button" id="toggle-details" hidden>
+                Hide Details
+            </button>
+        
+            <noscript>
+                <p class="fact-fallback">
+                    Please enable JavaScript to explore my personal
+                    facts and load random facts from the web.
+                </p>
+            </noscript>
+        
+        </section>
+  
+
+        <section class="reminder">
+            <h2>~ Keep in Mind ~</h2>
+
+            <p>
+                <em>
+                    Dream big for higher reach. Love Yourself!!
+                </em>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            A Little World of Mine | By Lisa with HTML & Eleventy
+        </p>
+
+        <p>
+            <a href="experiments.html">Explore My HTML Experiments</a>
+        </p>
+
+        <p>
+            <a href="form-no-js.html">
+                View Contact Form Without JavaScript
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>

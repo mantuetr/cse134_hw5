@@ -1,0 +1,159 @@
+---
+permalink: about.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Lisa">
+    <title>A Little World of Mine | About Me</title>
+    <link rel="author" href="about.html">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>A Little World of Mine</h1>
+
+
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about/">About Me</a>
+                <a href="favorites.html">I Love...</a> 
+                <a href="journey.html">My Journey</a> 
+                <a href="future.html">In the Future</a>
+                <a href="form-with-js.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <script src="/js/theme.js" defer></script>
+        <button type="button" id="theme-toggle" class="theme-toggle" hidden>
+            Switch to Dark Mode
+        </button>
+    </header>
+
+    <main class="about-page">
+        <section class="about-intro">
+            <div class="about-intro-content">
+                <div class="about-text">
+                    <h2>Get to Know Me!</h2>
+        
+                    <p>
+                        My name is
+                        <strong>
+                            <span lang="vi">Trần Tuệ Mẫn</span> (Lisa)
+                        </strong>
+                    </p>
+        
+                    <p>
+                        I'm a 20-year-old Computer Science student at UCSD.
+                        I'm originally from Vietnam, and now I live in Seattle.
+                        Let's go on the tour of my website.
+                    </p>
+        
+                    <p>
+                        I'm someone who enjoys exploring new things,
+                        meeting different people, and finding beauty in
+                        the little moments. I'm ESTJ/ISTJ.
+                        So, I'm a mixed of an extrovert and an introvert person.
+                    </p>
+                </div>
+        
+                <div class="about-photo">
+                    <img src="/img/lisa.jpg" alt="A photo of Lisa">
+                </div>
+            </div>
+        </section>
+
+        <div class="about-card-grid">
+            <section class="about-background">
+                <h2>My Background</h2>
+    
+                <article>
+                    <h3>I'm from </h3>
+    
+                    <p>Orginally <b>Saigon, Vietnam</b></p>
+                    <p>Now <b>Seattle</b></p>
+                </article>
+    
+                <article>
+                    <h3>My Life Today</h3>
+                    <p>I'm currently studying CS at UCSD. Outside of school, I enjoy spending time with friends, watching movies, and traveling</p> 
+                </article>
+            </section>
+    
+            <section class="about-personality">
+                <h2>My Personality</h2>
+                
+                <div>
+                    <p>I wouls describe myself as curious, responsible, and independent</p>
+    
+                    <p>My family and close friends. I wanna build a life that makes me happy, so that I have freedom to travel, meet new people, and experience different cultures</p>
+    
+                    <p>I may be quiet when I first meet someone, but I become more outgoing when I feel comfortable</p>
+    
+                    <p>I enjoy listening to other people's stories and learning from their experiences</p>
+                </div>
+            </section>
+    
+            <section class="about-facts">
+                <h2>Fun Facts</h2>
+    
+                <ul>
+                    <li>Born in April</li>
+    
+                    <li>Vietnamese and English</li>
+    
+                    <li>Currently learning Japanese</li>
+    
+                    <li>Enjoy watching League of Legends</li>
+                </ul>
+            </section>
+    
+            <section class="about-value">
+                <h2>I Value</h2>
+    
+                <ol>
+                    <li>
+                        <strong>Family:</strong>
+                        Spending time with the people I love
+                    </li>
+    
+                    <li>
+                        <strong>Growth:</strong>
+                        Learning from challenges and new experiences
+                    </li>
+    
+                    <li>
+                        <strong>Freedom:</strong>
+                        Having opportunities to explore the world
+                    </li>
+                </ol>
+            </section>
+
+        </div>
+
+        <section class="about-message">
+            <h2>A Message</h2>
+
+            <p>
+                <em>
+                    "Enjoy your life while you can"
+                </em>
+            </p>
+
+            <p>
+                Thanks for visiting my little world! <br>
+                I hope you enjoy exploring my website
+            </p>
+
+            <a href="favorites.html">Discover things I love</a>
+        </section>
+    </main>
+
+    {% include "footer.njk" %}
+    
+</body>
+</html>
